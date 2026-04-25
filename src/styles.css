@@ -10,3 +10,4 @@ main { max-width: 1200px; margin: 0 auto; padding: 2rem; }
 .features article { padding: 1rem; border-left: 4px solid #667eea; margin-bottom: 1rem; }
 footer { background: #333; color: white; text-align: center; padding: 1rem; margin-top: 3rem; }
 @media (max-width: 768px) { .hero h2 { font-size: 1.5rem; } }
+
