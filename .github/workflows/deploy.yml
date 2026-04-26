@@ -7,18 +7,13 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
     - uses: actions/checkout@v3
-
+    
     - name: Preparar archivos
-      run: |
-        mkdir -p build
-        cp -r src/* build/
-
-    - name: Deploy
+      run: mkdir -p build && cp -r src/* build/
+    
+    - name: Deploy a GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
